@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Notification</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 m-auto col-sm-12">
+                <div class="card border-primary mt-2">
+                    <div class="card-header bg-primary border-primary text-white">
+                        Notification Manager
+                    </div>
+
+                    <div class="card-body bg-white">
+                        <div class="mb-3">
+                            <label for="title" class="form-label">Titulo</label>
+                            <input type="text" class="form-control" id="title" placeholder="Ingresa el titulo de la notificatión">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Descripción</label>
+                            
+                            <textarea id="description" class="form-control" rows="5"
+                            placeholder="Ingresa la descripción de la notificación"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <button id="button-send-notification" type="button" class="btn btn-primary">Enviar Notificación</button>
+                        <button type="reset" class="btn btn-info">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="js/notification-manager.js"></script>
+</body>
+</html>
